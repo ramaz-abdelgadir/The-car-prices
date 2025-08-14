@@ -1,25 +1,62 @@
-# Project XYZ
+# The car Prices
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+**Project The Car price** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+* The Car dataset contains details about cars and their attributes that can be used for price prediction.
+
+.
 
 
 ## Business Requirements
-* Describe your business requirements
+* The goal of this project is to analyze and predict car prices based on various car attributes using the CarPrice_Assignment dataset.
+
+Key objectives:
+
+Understand the dataset — explore and clean the data to ensure quality and accuracy for modeling.
+
+Visualize trends — create clear and meaningful charts showing relationships between features and price, such as horsepower distribution, price vs. engine size, and fuel type comparisons.
+
+Develop predictive models — build and evaluate machine learning models to predict car prices based on the given features.
+
+Support decision-making — provide insights that can assist dealerships, manufacturers, and buyers in understanding car value trends and making informed pricing decisions.
 
 
-## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+## Hypothesis 
+* Hypothesis 1: Cars with higher horsepower tend to have higher prices.
+* Hypothesis 2: Engine size is a stronger predictor of price than fuel type.
+* Hypothesis 3: Cars from certain brands (e.g., luxury brands) have higher average prices regardless of technical specifications.
+* Hypothesis 4: Automatic transmission cars are generally priced higher than manual transmission cars.
 
-## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+# Project Plan
+## Data Collection
+
+Obtained CarPrice_Assignment.csv dataset from Kaggle.
+
+Downloaded and stored the raw dataset in a dedicated Dataset/raw folder.
+
+## Data Understanding
+
+Inspected dataset structure using Pandas (.head(), .info(), .describe()).
+
+Identified numerical, categorical, and datetime fields relevant for analysis.
+
+## Data Cleaning & Processing
+
+Handled missing values (if any) and removed duplicates.
+
+Converted data types (e.g., ensuring numerical columns are floats/integers).
+
+Standardised column names for consistency.
+
+Saved cleaned dataset in Dataset/clean folder for version control.
+
+Exploratory Data Analysis (EDA)
+
+Visualised key variables using Matplotlib and Seaborn (histograms, scatter plots, boxplots).
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
