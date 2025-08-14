@@ -32,19 +32,19 @@ Support decision-making — provide insights that can assist dealerships, manufa
 * Hypothesis 4: Automatic transmission cars are generally priced higher than manual transmission cars.
 
 # Project Plan
-## Data Collection
+### Data Collection
 
 Obtained CarPrice_Assignment.csv dataset from Kaggle.
 
 Downloaded and stored the raw dataset in a dedicated Dataset/raw folder.
 
-## Data Understanding
+### Data Understanding
 
 Inspected dataset structure using Pandas (.head(), .info(), .describe()).
 
 Identified numerical, categorical, and datetime fields relevant for analysis.
 
-## Data Cleaning & Processing
+### Data Cleaning & Processing
 
 Handled missing values (if any) and removed duplicates.
 
@@ -56,43 +56,106 @@ Saved cleaned dataset in Dataset/clean folder for version control.
 
 Exploratory Data Analysis (EDA)
 
-Visualised key variables using Matplotlib and Seaborn (histograms, scatter plots, boxplots).
+Visualised key variables using Plotly, Matplotlib and Seaborn (histograms, scatter plots, boxplots).
+If I have time before deadline I would also do:
+
+### Advanced Visualisations & Insights
+
+Created pairplots, heatmaps, and categorical comparisons to understand trends.
+
+Segmented analysis by brand, body style, and fuel type.
+
+### Interpretation & Reporting
+
+Summarised findings in a Jupyter Notebook with Markdown explanations.
+
+Documented visual insights and statistical results to validate hypotheses.
+
+
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+* Understand how key car features (e.g., horsepower, engine size, fuel type) influence car price.
+
+Rationale: This helps stakeholders identify which specifications drive higher prices and can guide pricing strategies or marketing focus.
+
+Mapped Visualisations:
+
+Scatter plots of horsepower vs price and engine-size vs price to reveal relationships.
+
+Regression plots to visualise trend lines and correlations.
+
+Heatmap showing correlations between numerical variables, including price.
+
+* Identify the distribution of prices across different brands and body styles.
+
+Rationale: Allows the business to segment the market and understand positioning of different brands and categories.
+
+Mapped Visualisations:
+
+Boxplots of price grouped by make (brand) to highlight spread and outliers.
+
+Bar charts showing average prices for each body-style.
+
+
 
 ## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+### Data Analysis Methods Applied
+Descriptive Statistics – Used pandas.describe() to summarise measures like mean, median, min, max, and standard deviation for numerical features.
+
+Correlation Analysis – Used Pearson correlation (df.corr()) and heatmaps to understand relationships between numerical variables such as horsepower and price.
+
+Visual Exploratory Data Analysis (EDA) – Leveraged Matplotlib and Seaborn to create histograms, scatter plots, box plots, and regression plots to detect patterns and outliers.
+
+Categorical Analysis – Grouped data by categories such as make, body-style, and fuel-type to compare average prices.
+
+Feature Distribution Analysis – Used KDE plots and histograms to inspect the spread of key features like horsepower and engine-size.
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+*The dataset used (CarPrice_Assignment.csv) contains no personally identifiable information (PII) such as names, addresses, or contact details.
+
+All data is publicly available from open sources (e.g., Kaggle), so there are no GDPR or data protection compliance issues.
+
+No sensitive customer data was collected or processed.
+
 
 
 
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+*Occasionally, histograms and scatter plots display overlapping labels when plotting many categories (e.g., car make). the heat map I created was too busy showing too many variables and it was not readable, so I had to remove non-useful columns like car_id, curbwight and highwaymgp.  
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
-
-
+### Challenge:
+Encountered difficulties with debugging and fixing non-functional code, including syntax errors, logical mistakes, and incorrect method usage.
+Strategy: Adopted a structured troubleshooting approach by breaking down code into smaller testable components, using error messages to guide fixes, consulting official documentation, and iteratively refining the code until the desired output was achieved. Additionally, leveraged AI tools such as GitHub Copilot and ChatGPT to generate alternative code suggestions, clarify concepts, and optimise solutions.
 
 
 ## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Pathlib
 
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+### Content
+Kaggle – The CarPrice_Assignment.csv dataset was sourced from Kaggle Datasets for the purpose of performing exploratory data analysis and visualisation.
+
+Pandas Documentation – For guidance on DataFrame manipulation and method usage: https://pandas.pydata.org/docs
+
+NumPy Documentation – For numerical computations and random data generation: https://numpy.org/doc
+
+Matplotlib Documentation – For creating static visualisations: https://matplotlib.org/stable/contents.html
+
+Seaborn Documentation – For enhanced and statistical visualisations: https://seaborn.pydata.org/
+
+GitHub Copilot – Assisted in writing, optimising, and debugging Python code.
+
+ChatGPT – Provided guidance, explanations, and example code snippets for data cleaning, exploratory data analysis, and visualisation tasks.
+
+### Media
+All visualisations and plots were created by me using Matplotlib and Seaborn within the Jupyter Notebook environment in VS Code.
 
 ### Content 
 
