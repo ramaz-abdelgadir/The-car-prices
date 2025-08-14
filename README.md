@@ -169,6 +169,7 @@ All visualisations and plots were created by me using Matplotlib and Seaborn wit
 - The images used for the gallery page were taken from this other open-source site
 
 
-
 ## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+*I would like to express my sincere gratitude to Vasi for their continuous support, guidance, and availability throughout the course of this project. Their expertise and willingness to assist at every stage greatly contributed to the successful completion of this work.
+
+
